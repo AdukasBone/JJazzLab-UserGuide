@@ -1,10 +1,10 @@
 ---
-description: よく聞かれる質問
+よくある質問
 ---
 
 # FAQ
 
-## JJazzLabが気に入ってて、無料でいてほしいのですが、何かお手伝いできますか？ <a href="#how-to-help" id="how-to-help"></a>
+## JJazzLabが気に入っているので、何かお手伝いできますか？ <a href="#how-to-help" id="how-to-help"></a>
 
 * [寄付 ](https://www.jjazzlab.com/en/donate/)してくださるとJJazzLabがみんなに無料のままでいられます。
 * JJazzLab [翻訳 ](contribute/translate-jjazzlab/)を手伝ってください。
@@ -31,18 +31,43 @@ MacOSでは、**Options** メインメニューの **JJazzLab→Preferences**か
 2. JJazzLabの**MIDIオプション**で、**MIDI出力デバイス**を**loopMIDI**に設定します。
 3. VSTホストソフトウェアで、**MIDIインデバイス**を**loopMIDI**に設定し、VSTホストとVSTプラグインがすべてのMIDIチャンネル（1〜16）を受信するように設定されていることを確認します。
 4. JJazzLabで曲を再生すると、VSTインストゥルメントが聞こえるはずです。
+5. JJazzLabから直接VSTサウンドを選択したくない場合は、ミックスコンソールのMIDIメニューから_すべてのMIDIパラメーターを無効にする_ことをお勧めします。
+
+## JJazzLab伴奏トラックからオーディオファイル(.mp3、.wav等)を生成するにはどうするのですか？
+JJazzLabでは、メニューの「ファイル」→「Export to audio」を選択してください。これには出力シンセとして FluidSynth が設定されている必要があります。「Separate tracks(トラックを分離)」オプションを選択すると、トラックごとに1つのオーディオファイルが生成されます。
 
 ## 真っ新な再インストールはどうするのですか？
 
 JJazzLabのユーザー設定を全てリセットする必要があります(アンインストール／再インストールでは十分ではありません)。&#x20;
 
-簡単な方法： メニュー **Tools→Options→Advanced** の **Reset all user settings**のボタンです。
+簡単な方法： メニュー **ツール→設定→Advanced** の **Reset all user settings**のボタンです。
 
-難しい方法：メニューの **Help→About→System Information** で **Netbeans user dir** の場所を確認し、 JJazzLabを終了してから **Netbeans user dir**を削除します。
+難しい方法：メニューの **ヘルプ→このソフトウェアについて→システム情報** で **Netbeans user dir** の場所を確認し、 JJazzLabを終了してから **Netbeans user dir**を削除します。
 
 ## Windowsの管理者権限がありませんが、JJazzLabをインストールできますか？
 
 はい。JJazzLab インストーラの最初のプロンプトで、「Install only for me」を選択し、書き込み権限のあるインストールディレクトリを選択してください（例：マイドキュメント）。
+
+## 良いサウンドの入手方法は？
+
+JJazzLabでは、アプリケーションに JJazzLab 向けに最適に設定された、すぐに使えるソフトウェアシンセ（FluidSynth）が組み込まれており、十分な音質を備えています。
+
+さらに優れた音質を得るには、JJazzLab をハードウェアシンセに接続するか、MIDI 経由で [VST/AU プラグイン](faq.md#can-i-use-vst-au-plugins-with-jjazzlab)に接続する必要があります。
+
+{% hint style="success" %}
+Steinberg社の Halion Sonic SE の無料版があり、JJazzLab と併用することで**高品質**の伴奏トラックを作成できます。詳細は、[JJazzLab フォーラム(https://jjazzlab.freeforums.net/thread/215/new-great-sounds-jjazzlab)をご覧ください。
+
+ {% endhint %}
+
+
+## ヤマハのアレンジャーキーボード(Tyros、PSR等)を持っているのですが、どうすればJJazzLabで使えますか？
+
+JJazzLabはキーボードを駆動させて最適化されたサウンドの恩恵を受けることができます。&#x20;
+
+* キーボードをMIDIで接続します。
+* ツール/設定のMidi Outタブに進みます。
+* Midi Out deviceで接続するシンセサイザーを選択します。
+* Output Synth部分で、**Add synth from file.**を選び、**YamahaRefSynth.ins**を選択します。
 
 ## フォントを大きくするにはどうしたらよいですか？ <a href="#font-bigger" id="font-bigger"></a>
 
@@ -52,7 +77,11 @@ JJazzLab をインストールしたディレクトリで、 **etc/jjazzlab.conf
 
 JJazzLab再起動すると、全メニューが大きく見えるはずです。
 
-&#x20;エディターフォントの中には、この設定に依存しないものもあるので、これですべてが解決するわけではありません。しかし、メニューの**Tools/Options/Theme**を使って、そのうちのいくつかを調整することができます。リストの各項目をチェックし、フォントが定義されている場合は、それを変更して大きくします。ユーザー設定は自動的に保存されますので、この作業は一度だけ行う必要があります。
+&#x20;エディターフォントの中には、この設定に依存しないものもあるので、これですべてが解決するわけではありません。しかし、メニューの**ツール/設定/Theme**を使って、そのうちのいくつかを調整することができます。リストの各項目をチェックし、フォントが定義されている場合は、それを変更して大きくします。ユーザー設定は自動的に保存されますので、この作業は一度だけ行う必要があります。
+
+{% hint style="info" %}
+4Kまたは5Kモニターをお使いの場合、JJazzLabが小さすぎてフォントが読みにくい場合があります。その場合は、上記の例のように、**default\_options**変数に**-J-Dsun.java2d.uiScale=2**を追加してください。JJazzLabは2倍の大きさで表示されます。
+{% endhint %}
 
 ## コマンドライン引数でJJazzLabを起動できますか？
 
@@ -65,7 +94,7 @@ JJazzLab再起動すると、全メニューが大きく見えるはずです。
 
 ## バグの提出方法は？ "log"ファイルはどうやって見つけるの？
 
-バグは[Eメール ](https://www.jjazzlab.com/en/contact/)を送っていただくか、GitHub ユーザーなら [issue](https://github.com/jjazzboss/JJazzLab-X/issues)を作ってください。
+バグは、 [JJazzLabフォーラム](https://jjazzlab.freeforums.net/)で新しいスレッドを作るか、またはGitHub ユーザーなら [issue](https://github.com/jjazzboss/JJazzLab-X/issues)を作ってください。
 
 サポートするためには、以下の情報が必要です：
 
@@ -79,13 +108,13 @@ JJazzLabを起動するたびに、新しい**ログファイル** が作成さ�
 
 ログファイルの内容を取得するには：
 
-1. 問題が発生した直後に、メニューの **Tools→Options→Advanced**を開きます。
+1. 問題が発生した直後に、メニューの **ツール/設定/Advanced**を開きます。
 2. **Show Log Window**をクリック
 3. バグリポート内にあるウィンドウの **内容全部** をコピー＆ペースト
 
 何らかの理由で上記が上手くいかない場合は：
 
-1. メニューの **Help→About**に進み、 **Netbeans user dir**を見つけます。\
+1. メニューの **ヘルプ/このソフトウェアについて**に進み、 **Netbeans user dir**を見つけます。\
    Windowsの例 `C:\Users\MyName\AppData\Roaming\jjazzlab\2.2`\
    Linuxの例 `/home/MyName/.jjazzlab/2.2`
 2. エクスプローラーを開き、そのディレクトリに進んで、そのサブディレクトリの **var/log** に進みます。
@@ -95,5 +124,3 @@ JJazzLabを起動するたびに、新しい**ログファイル** が作成さ�
 {% hint style="danger" %}
 **Netbeans user dir**が見当たらない場合、エクスプローラが隠しファイルを表示するようになっているか確認してください(例. AppData ディレクトリはWindowsでは通常、隠されています)。
 {% endhint %}
-
-&#x20;

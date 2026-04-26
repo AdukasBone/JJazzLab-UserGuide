@@ -1,22 +1,24 @@
-# ドキュメント校正
+# ドキュメントの改訂
 
-## ユーザーなら誰でもオンライン文章を校正できますよ
+## どのユーザーでもオンライン文書を変更できます
 
-このサイトは、GitBookというプラットフォームで運営されており、ユーザーはWikiのようにドキュメントを更新することができます。変更はインターネットブラウザ上でシンプルなエディタを使って直接行えるので、とても簡単です。
+このサイトはGitBookプラットフォームでホストされており、**ユーザーがWikiのようにドキュメントを更新できる**仕組みです。変更はインターネットブラウザ上で直接行えるため、インストール不要で非常に簡単です。
 
-もし何か変更を加えたい場合は、メール ([コチラ](https://www.jjazzlab.com/en/contact/)) でその内容を手短にお知らせくだされば、JJazzLab GitBookへの書き込みアクセス権をお渡しできます。&#x20;
+変更をご希望の場合は、メール（[こちら](https://www.jjazzlab.com/en/contact/)）をお送りください。JJazzLab GitBookへの書き込み権限を付与するリンクを返信します。&#x20;
 
 {% hint style="info" %}
-GitHubをお使いの方は、各ページの右上にある「**Edit on GitHub** 」ボタンをクリックするか、または [JJazzLab-X-UserGuide repository](https://github.com/jjazzboss/JJazzLab-X-UserGuide)に直接プルリクエストを行うこともできます。
+GitHubユーザーの方なら、各ページの右上にある**Edit on GitHub**ボタンを使用するか、[JJazzLab-X-UserGuide repository](https://github.com/jjazzboss/JJazzLab-X-UserGuide)で直接プルリクエストを作成することもできます。
 {% endhint %}
 
-## オンライン文章の翻訳
+## オンライン文書の翻訳
 
-校正や新しい翻訳を加えることでもお手伝いいただけます。今は2言語で、英語と日本語です。まだ無い言語でしたら、（[ココ](https://www.jjazzlab.com/en/contact/)）にお問合せくださればその言語用に「GitBook variant」を追加します。
+翻訳の修正や新規追加でもお手伝いいただけます。現在、対応言語は英語と日本語の2言語です。お使いの言語がまだない場合は、こちら（https://www.jjazzlab.com/en/contact/）までご連絡ください。その言語用の「GitBook variant」を追加します。
 
-## 主な協力者
+## 主な貢献者
 
-**アデュカス**：日本語ページ作成\[ver.3.2.1　2022年5月]　（訳注：恐縮です！）
+**H. Sakuda**. : 日本語ドキュメントページを作成(ver.5.10)
+
+
 
 
 

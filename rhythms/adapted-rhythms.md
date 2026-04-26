@@ -1,13 +1,9 @@
-# リズムの適応
+# 適応リズム
 
-異なる拍子の**セクション**を作成した場合、JJazzLabは**適応するリズム**の**ソングパート**を作成します。これは、単純に前のソングパートの**リズム**を新しい拍子に**適応**させたものです。
+[セクション](../editors/chord-lead-sheet.md#sections-input)の拍子記号を変更すると、JJazzLabは影響を受ける[ソングパート](../editors/song-structure.md#song-parts)に対して**適応リズム**を使用します。これは単に同じリズムを短縮または繰り返し、新しい小節サイズに合わせるものです。
 
-![](../.gitbook/assets/AdaptedRhythmExample.png)
+![](../.gitbook/assets/adaptedrhythmexample.png)
 
-&#x20;ご覧のように、**適応したリズム**はミックスコンソールでチャンネルを追加しなくても構いません(上の例では、**fastbossa.s629.prs**)。
+**適応リズム**は、ミキシングコンソールで追加のチャンネルが不要であることに気づくでしょう：これは元のリズム（上記の例では**fastbossa.s629.prs**）のMIDIチャンネルを使用します。
 
-&#x20;もし、**適応させたリズム**が不要な場合は、**リズム選択ダイアログ**を使って置き換えることができます。
-
-![](../.gitbook/assets/RemoveSourceRhythmError.png)
-
-上記の場合、**fastbossa.s629.prs**を別のリズムに置き換えたい場合は、まず最初に、**適応したリズム**を使用している２つ目の曲のパートを削除する必要があります。
+**適応リズム**が要らない場合は、[リズム選択ダイアログ](../editors/song-structure.md#change-rhythm)を使用して置き換えてください。

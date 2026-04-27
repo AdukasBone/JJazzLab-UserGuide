@@ -36,7 +36,7 @@ You can also play only the **current selected bars or/and song parts** (ctrl-shi
 
 ## Loop mode
 
-When **loop mode** is activated, the playback restarts when playback reaches the end (the end of the song, or the end of the selection if **Play selection** was used).
+When **loop mode** is activated, the playback restarts from first bar when playback reaches the end (the end of the song, or the end of the selection if **Play selection** was used).
 
 <figure><img src="../.gitbook/assets/LoopButton.png" alt=""><figcaption></figcaption></figure>
 
@@ -45,12 +45,12 @@ When **loop mode** is activated, the playback restarts when playback reaches the
 You can define a **loop restart bar** which is different from the first bar.&#x20;
 
 {% hint style="success" %}
-This is useful for simple practice songs meant to be repeated endlessly (loop mode activated), but you have an intro which must not be repeated -and you don't want to bother to create a custom song structure.
+This feature is useful for simple practice songs meant to be repeated endlessly (loop mode is activated), but you have an intro which must not be repeated -and you don't want to create a specific song structure.
 {% endhint %}
 
-The loop restart measure is represented by 2 vertical bars on the left, as shown below.
+To set the **loop restart bar** select a bar and use its popup menu. The loop restart measure is represented by 2 vertical bars on the left, as shown below.&#x20;
 
-<figure><img src="../.gitbook/assets/LoopRestartExample.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/SetLoopRestartBar.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Loop restart bar is ignored when using **Play selection**.

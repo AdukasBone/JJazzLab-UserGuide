@@ -131,7 +131,7 @@ Sometimes we need to repeat a section but with a single chord variation. Below i
 
 In a JJazzLab song, one way to do this is to replace the 'A' section by two 'A1' and 'A2' sections, with different endings.&#x20;
 
-The **substitute chord** feature lets you do this with one 'A' section: **D7sus4** has a **substitute chord** set to **Gmaj7**, to be used for the 2nd 'A' section.
+The **substitute chord** feature lets you do this keeping only one 'A' section: **D7sus4** has a **substitute chord** set to **Gmaj7**, to be used only for the 2nd 'A' section.
 
 To set a substitute chord, select a chord symbol, edit it and select the **substitute** chord symbol tab.
 
@@ -186,7 +186,7 @@ This can be useful when some sections have an odd number of bars.
 
 Select a bar with a section defined or select the section itself, then use popup menu **Section at New Line**.
 
-![](../.gitbook/assets/SectionNewLinePopupMenu.png)
+![](../.gitbook/assets/ForceSectionNewLine.png)
 
 This will result in the display below:
 
@@ -194,13 +194,27 @@ This will result in the display below:
 
 ## Bar annotations / lyrics
 
-You can add **annotations** to any bar.
+You can add **annotations** to any bar.&#x20;
+
+To add an annotation edit the bar (double-click or use popup menu **Edit...**) and use the Annotation panel.
+
+<figure><img src="../.gitbook/assets/BarEditAnnotation (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/2024-01-01 00_35_05-Chord lead sheet - English — Mozilla Firefox.png" alt=""><figcaption></figcaption></figure>
 
-When annotations are hidden, bar with annotations are marked with a post-it (tooltip shows the annotation text).
+You can **show/hide annotations** using the button on the right side.
+
+When annotations are hidden, bar with annotations are marked with a post-it (tooltip shows the annotation text), as in the example below.
 
 <figure><img src="../.gitbook/assets/2024-01-01 00_42_01-JJazzLab  4.0.2.png" alt=""><figcaption></figcaption></figure>
+
+You can change the number of annotation lines displayed in the lead sheet editor via the settings dialog (below).&#x20;
+
+<figure><img src="../.gitbook/assets/AnnotationSettings.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The font/size/color used by bar annotations can be changed in the **Theme** tab of the **Options/Preferences**.
+{% endhint %}
 
 #### Special # syntax for Easy Reader
 

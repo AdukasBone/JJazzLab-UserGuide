@@ -48,7 +48,7 @@ You can define a **loop restart bar** which is different from the first bar.&#x2
 This is useful for simple practice songs meant to be repeated endlessly (loop mode activated), but you have an intro which must not be repeated -and you don't want to bother to create a custom song structure.
 {% endhint %}
 
-The loop restart is represented by 2 bars on the left, as shown below.
+The loop restart measure is represented by 2 vertical bars on the left, as shown below.
 
 <figure><img src="../.gitbook/assets/LoopRestartExample.png" alt=""><figcaption></figcaption></figure>
 

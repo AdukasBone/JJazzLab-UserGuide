@@ -196,19 +196,19 @@ This will result in the display below:
 
 You can add **annotations** to any bar.&#x20;
 
-To add an annotation edit the bar (double-click or use popup menu **Edit...**) and use the Annotation panel.
+To add an annotation **edit** the bar (double-click the bar, or select bar and press **Enter**, or use bar popup menu **Edit...**) and write in the Annotation panel :
 
 <figure><img src="../.gitbook/assets/BarEditAnnotation (1).png" alt=""><figcaption></figcaption></figure>
 
+You can **show/hide annotations** using the right toolbar button (or use **ctrl-L**) :
+
 <figure><img src="../.gitbook/assets/2024-01-01 00_35_05-Chord lead sheet - English — Mozilla Firefox.png" alt=""><figcaption></figcaption></figure>
 
-You can **show/hide annotations** using the button on the right side.
-
-When annotations are hidden, bar with annotations are marked with a post-it (tooltip shows the annotation text), as in the example below.
+When annotations are hidden, bars with an annotation are marked with a post-it (tooltip shows the annotation text) :
 
 <figure><img src="../.gitbook/assets/2024-01-01 00_42_01-JJazzLab  4.0.2.png" alt=""><figcaption></figcaption></figure>
 
-You can change the number of annotation lines displayed in the lead sheet editor via the settings dialog (below).&#x20;
+Use the lead sheet editor settings to change the number of annotation lines displayed :&#x20;
 
 <figure><img src="../.gitbook/assets/AnnotationSettings.png" alt=""><figcaption></figcaption></figure>
 
